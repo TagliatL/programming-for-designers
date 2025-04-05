@@ -12,13 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
   m_Name: Readme 1
   m_EditorClassIdentifier: 
-  icon: {fileID: 2800000, guid: 727a75301c3d24613a3ebcec4a24c2c8, type: 3}
-  title: Chapter 1<br>Introduction to Unity
+  icon: {fileID: 2800000, guid: b332f069270551048ae90f30573ba746, type: 3}
+  title: Chapter 01<br>Unity basics, physics & inputs
   sections:
-  - heading: Title
-    text: Lorem ipsum
+  - heading: 'Part 01: Anatomy of a scene'
+    text: Scenes are assets containing the actual game in the project. Understanding
+      how scenes work and their relation to the project view is important to understand
+      how to work in Unity.
     linkText: 
     url: 
     icon: {fileID: 2800000, guid: fb516a0f08c40fb47af7cb7fb5eb639f, type: 3}
-    scene: Assets/_Chapter 01/test.unity
+    scene: Assets/_Chapter 01/Scene_Analysis.unity
+    checkList: []
+  - heading: Exercises
+    text: Understand Unity's approach to scenes and assets
+    linkText: 
+    url: 
+    icon: {fileID: 0}
+    scene: 
+    checkList:
+    - check: 0
+      scene: Assets/_Chapter 01/Exercises/Exercise_01_01.unity
   loadedLayout: 0

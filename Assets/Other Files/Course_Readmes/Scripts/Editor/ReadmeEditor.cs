@@ -8,7 +8,7 @@ using System.Reflection;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
-[CustomEditor(typeof(Readme))]
+[CustomEditor(typeof(ReadmeChapter))]
 [InitializeOnLoad]
 public class ReadmeEditor : Editor
 {
@@ -46,7 +46,7 @@ public class ReadmeEditor : Editor
         method.Invoke(null, new object[] { Path.Combine(Application.dataPath, "TutorialInfo/Layout.wlt"), false });
     }
 
-    static Readme SelectReadme()
+    static ReadmeChapter SelectReadme()
     {
         var ids = AssetDatabase.FindAssets("Readme t:Readme");
         if (ids.Length == 1)
@@ -55,7 +55,7 @@ public class ReadmeEditor : Editor
 
             Selection.objects = new UnityEngine.Object[] { readmeObject };
 
-            return (Readme)readmeObject;
+            return (ReadmeChapter)readmeObject;
         }
         else
         {
@@ -66,10 +66,10 @@ public class ReadmeEditor : Editor
 
     protected override void OnHeaderGUI()
     {
-        var readme = (Readme)target;
+        var readme = (ReadmeChapter)target;
         Init();
 
-        var iconWidth = Mathf.Min(EditorGUIUtility.currentViewWidth / 3f - 20f, 256f);
+        var iconWidth = Mathf.Min(EditorGUIUtility.currentViewWidth / 4f - 20f, 256f);
 
         GUILayout.BeginHorizontal("In BigTitle");
         {
@@ -94,7 +94,7 @@ public class ReadmeEditor : Editor
 
     public override void OnInspectorGUI()
     {
-        var readme = (Readme)target;
+        var readme = (ReadmeChapter)target;
         Init();
         GUILayout.Space(k_Space);
 
@@ -104,6 +104,7 @@ public class ReadmeEditor : Editor
             {
                 GUILayout.Label(section.heading, HeadingStyle);
             }
+            GUILayout.Space(k_Space);
 
             if (!string.IsNullOrEmpty(section.text))
             {
@@ -142,10 +143,11 @@ public class ReadmeEditor : Editor
 
             GUILayout.FlexibleSpace();
 
+
             if (!string.IsNullOrEmpty(section.scene))
             {
                 string sceneName = SceneManager.GetSceneByPath(section.scene).name;
-                if (GUILayout.Button("To the scene : " + sceneName, ButtonStyle, GUILayout.Width(iconWidth)))
+                if (GUILayout.Button("Example scene", ButtonStyle, GUILayout.Width(iconWidth)))
                 {
                     EditorSceneManager.OpenScene(section.scene);
                 }
@@ -158,10 +160,43 @@ public class ReadmeEditor : Editor
 
 
             GUILayout.Space(k_Space);
+
+            int exerciseButtonWidth = (int)(EditorGUIUtility.currentViewWidth * .3f);
+
+            for (int i = 0; i < section.checkList.Count; i++)
+            {
+                if (section.checkList[i] != null)
+                {
+                    string sceneNameExercise = SceneManager.GetSceneByPath(section.checkList[i].scene).name;
+                    GUILayout.BeginHorizontal();
+
+                    GUILayout.FlexibleSpace();
+                    GUI.backgroundColor = Color.white;
+                    if (GUILayout.Button("Exercise " + "0"+(i+1), ButtonStyle, GUILayout.Width(exerciseButtonWidth)))
+                    {
+                        EditorSceneManager.OpenScene(section.checkList[i].scene);
+                    }
+                    string checkText = section.checkList[i].check ? "Done!" : "To do";
+                    if (section.checkList[i].check)
+                    {
+                        GUI.backgroundColor = Color.green;
+                    }
+                    else
+                    {
+                        GUI.backgroundColor = Color.red;
+                    }
+                    
+                    GUILayout.Toggle(section.checkList[i].check, checkText);
+                    GUI.backgroundColor = Color.white;
+
+                    GUILayout.FlexibleSpace();
+
+                    GUILayout.EndHorizontal();
+
+                }
+            }
+           
         }
-
-        
-
     }
 
     bool m_Initialized;
@@ -224,11 +259,11 @@ public class ReadmeEditor : Editor
         m_BodyStyle.richText = true;
 
         m_TitleStyle = new GUIStyle(m_BodyStyle);
-        m_TitleStyle.fontSize = 26;
+        m_TitleStyle.fontSize = 22;
 
         m_HeadingStyle = new GUIStyle(m_BodyStyle);
         m_HeadingStyle.fontStyle = FontStyle.Bold;
-        m_HeadingStyle.fontSize = 18;
+        m_HeadingStyle.fontSize = 16;
 
         m_LinkStyle = new GUIStyle(m_BodyStyle);
         m_LinkStyle.wordWrap = false;
