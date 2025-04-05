@@ -1,0 +1,10 @@
+{
+    "name": "Default",
+    "id": "e4ca14d3-e450-4a7e-8530-41c83cb801fd",
+    "skin": "Default",
+    "fileName": "Default",
+    "redistributable": false,
+    "lite": true,
+    "priority": 7.0,
+    "type": "json"
+}

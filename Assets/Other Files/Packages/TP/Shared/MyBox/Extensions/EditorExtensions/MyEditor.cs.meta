@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bca62b51cb1a1a1448d36f9c9881baff
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Extensions/EditorExtensions/MyEditor.cs
+  uploadId: 572058

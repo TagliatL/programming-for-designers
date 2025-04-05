@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 71b776f7676544546bab5de3592e57ab
+timeCreated: 1567292088
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Readme/Runtime/Settings/ReadmeSettings.cs
+  uploadId: 572058

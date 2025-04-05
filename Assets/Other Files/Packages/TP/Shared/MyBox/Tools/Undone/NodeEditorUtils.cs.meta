@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eef06924417feca45b14506a47fcbe79
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Tools/Undone/NodeEditorUtils.cs
+  uploadId: 572058

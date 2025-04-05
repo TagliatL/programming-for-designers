@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: aa70d9a2cae9eb24a9803b7b34e7578c
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Tools/Undone/ECS/README.md
+  uploadId: 572058

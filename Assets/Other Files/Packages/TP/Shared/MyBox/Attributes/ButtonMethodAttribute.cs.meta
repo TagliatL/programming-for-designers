@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e96e2e6d8d1626c4abf4c413bc489af0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Attributes/ButtonMethodAttribute.cs
+  uploadId: 572058

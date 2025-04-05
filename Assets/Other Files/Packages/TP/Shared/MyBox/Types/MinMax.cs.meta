@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 09481c105437911469e8eaac9c304db4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Types/MinMax.cs
+  uploadId: 572058

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8e3f9590e01e1314f837f40c145d098e
+timeCreated: 1570129680
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/SerializableDictionary/SerializableDictionary.cs
+  uploadId: 572058

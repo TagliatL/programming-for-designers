@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 9b54e093f575245449b637ecc1117c1b
+timeCreated: 1566257252
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Readme/Editor/IconManager.cs
+  uploadId: 572058

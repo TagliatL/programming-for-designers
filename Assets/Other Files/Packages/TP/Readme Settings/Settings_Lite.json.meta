@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 66aa812bdac43b749a7f3a37e280bf3a
+timeCreated: 1567298195
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Readme Settings/Settings_Lite.json
+  uploadId: 572058

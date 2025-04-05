@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f124183e25b4eb04681a42b28f6b3cb7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Extensions/MyAlgorithms.cs
+  uploadId: 572058

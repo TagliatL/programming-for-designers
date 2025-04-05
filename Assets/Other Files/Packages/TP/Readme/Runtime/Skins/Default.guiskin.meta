@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 380ec3f289e4ed74897f97b0c5685a65
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Readme/Runtime/Skins/Default.guiskin
+  uploadId: 572058

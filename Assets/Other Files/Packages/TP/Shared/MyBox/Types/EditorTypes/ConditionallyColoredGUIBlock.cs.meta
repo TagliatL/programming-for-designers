@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 39b867fda15ebe443a93712a809c93c1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Types/EditorTypes/ConditionallyColoredGUIBlock.cs
+  uploadId: 572058

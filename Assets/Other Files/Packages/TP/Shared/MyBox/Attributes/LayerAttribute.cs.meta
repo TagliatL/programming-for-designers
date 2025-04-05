@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 979d3d332ae931a4f8dc8aaf52644f0c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Attributes/LayerAttribute.cs
+  uploadId: 572058

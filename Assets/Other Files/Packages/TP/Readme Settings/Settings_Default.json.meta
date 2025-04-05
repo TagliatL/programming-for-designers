@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 00ae38dffd2ab1c4cbc7d1d15607f751
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Readme Settings/Settings_Default.json
+  uploadId: 572058

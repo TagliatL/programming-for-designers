@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 134a4a5740fe6de41bb8c6c32aeb784a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Types/ColliderToMesh.cs
+  uploadId: 572058

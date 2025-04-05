@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 603a37495c116f64397be1ba977b5f4f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 156751
+  packageName: Readme Lite
+  packageVersion: 1.4.1
+  assetPath: Assets/Packages/TP/Shared/MyBox/Tools/Undone/ECS/Bool.cs
+  uploadId: 572058
