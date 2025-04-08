@@ -119,56 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &114532898 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3436836158073629640, guid: 0c8bf403e6b7ee14aa6e48b686df600b, type: 3}
-  m_PrefabInstance: {fileID: 383170666299703015}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &114532899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6787406865129732146, guid: 0c8bf403e6b7ee14aa6e48b686df600b, type: 3}
   m_PrefabInstance: {fileID: 383170666299703015}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &114532900
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114532898}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &114532901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114532898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0975d9bb94d16c459b6f7077b0c2dc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_chapter: {fileID: 11400000, guid: 0a72edcc187837f4b8fe93cc3c171c73, type: 2}
 --- !u!1 &229355590
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,10 +653,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2351140353555743873, guid: 0c8bf403e6b7ee14aa6e48b686df600b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3436836158073629640, guid: 0c8bf403e6b7ee14aa6e48b686df600b, type: 3}
       propertyPath: m_Name
       value: GOAL
@@ -773,13 +724,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3436836158073629640, guid: 0c8bf403e6b7ee14aa6e48b686df600b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 114532900}
-    - targetCorrespondingSourceObject: {fileID: 3436836158073629640, guid: 0c8bf403e6b7ee14aa6e48b686df600b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 114532901}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c8bf403e6b7ee14aa6e48b686df600b, type: 3}
 --- !u!1001 &1207298215251842344
 PrefabInstance:
@@ -907,9 +852,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 465692289018680323, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 229355593}
+    - target: {fileID: 1098798930379433605, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098798930379433605, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4270855428441053511, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
       propertyPath: m_Name
       value: Canvas-ExerciseInterface
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293995678282306055, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8373571918990810221, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
       propertyPath: m_Pivot.x
