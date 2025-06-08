@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
-  m_Name: Readme 1
+  m_Name: Chapter01
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: b332f069270551048ae90f30573ba746, type: 3}
-  title: Chapter 01<br>Unity basics, physics & inputs
+  title: Chapter 01<br>Unity basics and 3D physics
   sections:
   - heading: 'Part 01: Anatomy of a scene'
     text: Scenes are assets containing the actual game in the project. Understanding
@@ -33,4 +33,6 @@ MonoBehaviour:
     checkList:
     - check: 0
       scene: Assets/_Chapter 01/Exercises/Exercise_01_01.unity
+    - check: 1
+      scene: Assets/_Chapter 01/Exercises/Exercise_01_02.unity
   loadedLayout: 0
