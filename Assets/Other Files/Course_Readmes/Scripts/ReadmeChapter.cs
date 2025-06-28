@@ -16,7 +16,8 @@ public class ReadmeChapter : ScriptableObject
     [Serializable]
     public class Section
     {
-        public string heading, text, linkText, url;
+        public string heading, text;
+        public List<UsefulLink> links;
         public Texture2D icon;
         public string scene;
         public List<ExerciceCheckList> checkList;
@@ -28,5 +29,13 @@ public class ReadmeChapter : ScriptableObject
         [ReadOnly]
         public bool check;
         public string scene;
+    }
+
+    [Serializable]
+    public class UsefulLink
+    {
+        [ReadOnly]
+        public string linkText;
+        public string url;
     }
 }

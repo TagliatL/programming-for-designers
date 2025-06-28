@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Chapter01_Lesson 01
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: b332f069270551048ae90f30573ba746, type: 3}
+  title: Chapter 01<br>Unity basics and 3D physics
+  sections:
+  - heading: 'Part 01: Anatomy of a scene'
+    text: Scenes are a specific kind of asset where the game logic happens. Understanding
+      how scenes work and their relation to the project view is important to understand
+      how to work in Unity.
+    links:
+    - linkText: Read on the GameObject-Component relationship
+      url: https://docs.unity3d.com/520/Documentation/Manual/TheGameObject-ComponentRelationship.html
+    - linkText: How to use Components
+      url: https://docs.unity3d.com/520/Documentation/Manual/UsingComponents.html
+    - linkText: On the difference between a Script and a Component
+      url: https://docs.unity3d.com/520/Documentation/Manual/TheComponent-ScriptRelationship.html
+    icon: {fileID: 2800000, guid: ae1c96d73d1679c43a836f06adc3b437, type: 3}
+    scene: Assets/_Chapter 01/Example_of_a_scene.unity
+    checkList: []
+  - heading: Exercises
+    text: To understand Unity's approach to scenes and assets I've prepared a series
+      of small exercises. Use the knowledge you've gathered from the example scene
+      and the previous and following links to complete them.
+    links:
+    - linkText: Types of properties in a Component
+      url: https://docs.unity3d.com/520/Documentation/Manual/EditingValueProperties.html
+    - linkText: Scene View navigation (pertinent to Exercise 1)
+      url: https://docs.unity3d.com/6000.1/Documentation/Manual/SceneViewNavigation.html
+    - linkText: More info on how to use the Scene View
+      url: https://docs.unity3d.com/520/Documentation/Manual/UsingTheSceneView.html
+    icon: {fileID: 0}
+    scene: 
+    checkList:
+    - check: 0
+      scene: Assets/_Chapter 01/Exercises/Exercise_01_01.unity
+    - check: 0
+      scene: Assets/_Chapter 01/Exercises/Exercise_01_02.unity
+    - check: 0
+      scene: Assets/_Chapter 01/Exercises/Exercise_01_03.unity
+  loadedLayout: 0

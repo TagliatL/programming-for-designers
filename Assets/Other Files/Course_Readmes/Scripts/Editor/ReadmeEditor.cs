@@ -111,12 +111,15 @@ public class ReadmeEditor : Editor
                 GUILayout.Label(section.text, BodyStyle);
             }
 
-            if (!string.IsNullOrEmpty(section.linkText))
+            if (section.links.Count>0)
             {
-                if (LinkLabel(new GUIContent(section.linkText)))
+                for(int i = 0; i < section.links.Count; i++)
                 {
-                    Application.OpenURL(section.url);
-                }
+                    if (LinkLabel(new GUIContent(section.links[i].linkText)))
+                    {
+                        Application.OpenURL(section.links[i].url);
+                    }
+                }              
             }
 
             GUILayout.Space(k_Space);
@@ -147,7 +150,7 @@ public class ReadmeEditor : Editor
             if (!string.IsNullOrEmpty(section.scene))
             {
                 string sceneName = SceneManager.GetSceneByPath(section.scene).name;
-                if (GUILayout.Button("Example scene", ButtonStyle, GUILayout.Width(iconWidth)))
+                if (GUILayout.Button("Open Scene", ButtonStyle, GUILayout.Width(iconWidth)))
                 {
                     EditorSceneManager.OpenScene(section.scene);
                 }

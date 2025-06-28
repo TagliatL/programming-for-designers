@@ -6,6 +6,13 @@ using UnityEngine.SceneManagement;
 public class Goal : MonoBehaviour
 {
     public ExerciseComplete exerciseComplete;
+    public bool OnPlay = false;
+
+    private void Start()
+    {
+        if(OnPlay)
+            exerciseComplete.Complete();
+    }
 
     private void OnTriggerEnter(Collider other)
     {

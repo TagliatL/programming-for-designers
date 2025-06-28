@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -19,6 +20,7 @@ public class ExerciseComplete : MonoBehaviour
 
     public void Complete()
     {
+        Start();
         StartCoroutine(CompleteRoutine());
     }
 

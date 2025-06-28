@@ -951,8 +951,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8588101479546319812, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1504877789051635933}
   m_SourcePrefab: {fileID: 100100000, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
+--- !u!1 &1504877789051635932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8588101479546319812, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
+  m_PrefabInstance: {fileID: 1504877789051635931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1504877789051635933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504877789051635932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 039c27774308d0b4a8332058999246a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4130576897093376803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -968,6 +988,11 @@ PrefabInstance:
     - target: {fileID: 4270855428441053511, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
       propertyPath: m_Name
       value: Canvas-ExerciseInterface
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013036933943373306, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
+      propertyPath: m_text
+      value: Edit the Ball_01 script attached to the ball to make it travel to the
+        goal when pressing Play.
       objectReference: {fileID: 0}
     - target: {fileID: 8373571918990810221, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
       propertyPath: m_Pivot.x
