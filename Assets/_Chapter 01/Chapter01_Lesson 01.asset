@@ -49,4 +49,8 @@ MonoBehaviour:
       scene: Assets/_Chapter 01/Exercises/Exercise_01_02.unity
     - check: 0
       scene: Assets/_Chapter 01/Exercises/Exercise_01_03.unity
+    - check: 0
+      scene: Assets/_Chapter 01/Exercises/Exercise_01_04.unity
+    - check: 0
+      scene: Assets/_Chapter 01/Exercises/Exercise_01_05.unity
   loadedLayout: 0

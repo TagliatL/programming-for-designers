@@ -710,7 +710,7 @@ PrefabInstance:
       objectReference: {fileID: 229355593}
     - target: {fileID: 838875386148835834, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
       propertyPath: m_text
-      value: Exercise 03
+      value: Exercise 03 - Understanding camera placement
       objectReference: {fileID: 0}
     - target: {fileID: 4270855428441053511, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
       propertyPath: m_Name
