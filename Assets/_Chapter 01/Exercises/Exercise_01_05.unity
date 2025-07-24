@@ -1075,6 +1075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas-ExerciseInterface
       objectReference: {fileID: 0}
+    - target: {fileID: 5862851768984678868, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
+      propertyPath: positions.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8013036933943373306, guid: 8201391c6058abe4bba52a2a92b88108, type: 3}
       propertyPath: m_text
       value: Physics materials are assets containing values for both friction and
