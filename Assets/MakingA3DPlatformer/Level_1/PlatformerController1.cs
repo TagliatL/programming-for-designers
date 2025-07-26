@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SimplePhysics3DPlatformerController : MonoBehaviour
+public class PlatformerController1 : MonoBehaviour
 {
     [SerializeField] private float jumpStrength;
     [SerializeField] private float movementSpeed;
