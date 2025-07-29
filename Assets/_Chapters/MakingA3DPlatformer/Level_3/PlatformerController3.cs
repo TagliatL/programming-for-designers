@@ -34,8 +34,6 @@ public class PlatformerController3 : MonoBehaviour
         //by normalizing this value we get our direction in a way that's very easy to process, -1 in the X axis means we're going left, 1 right, etc...
         currentDirection = currentVelocity.normalized;
 
-        GroundCheck();
-
         inputVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         inputVector = Vector3.ClampMagnitude(inputVector, 1f);
 
@@ -62,6 +60,9 @@ public class PlatformerController3 : MonoBehaviour
 
         //we record our current position
         lastPos = transform.position;
+
+        //to not clutter the update we put the ground check and the visual debugging into their own methods called in the Update
+        GroundCheck();
 
         VisualDebug();
     }
