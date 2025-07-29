@@ -7,7 +7,7 @@ public class PlatformerController2 : MonoBehaviour
     [SerializeField] private float extraGravity = 5f;
 
     Rigidbody rb;
-    BoxCollider collider;
+    BoxCollider playerCollider;
     Vector3 inputVector;
     bool isGrounded = true;
     bool isJumping = false;
@@ -17,7 +17,7 @@ public class PlatformerController2 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         //here we get the collider contained in the child of the Player using GetComponentInChildren
-        collider = GetComponentInChildren<BoxCollider>();
+        playerCollider = GetComponentInChildren<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -41,16 +41,16 @@ public class PlatformerController2 : MonoBehaviour
         //next, a visual representaton of the raycast that checks for the ground
         //since I'm feeling fancy, I'll change the color depending on the grounding status
         if(isGrounded)
-            Debug.DrawRay(transform.position, (Vector3.down * (collider.size.y * .5f + 0.1f)), Color.green);
+            Debug.DrawRay(transform.position, (Vector3.down * (playerCollider.size.y * .5f + 0.1f)), Color.green);
         else
-            Debug.DrawRay(transform.position, (Vector3.down * (collider.size.y * .5f + 0.1f)), Color.red);
+            Debug.DrawRay(transform.position, (Vector3.down * (playerCollider.size.y * .5f + 0.1f)), Color.red);
     }
 
     //something I didnt do in Level 1 that needs addressing: if we are applying forces to a rigidbody we need to do so in the FixedUpdate 
     //BUT the input detection should still be happening in the regular Update, here I simply have a bool that I set to true once I press Space
-    //and then I check fr this value (pressjump) in my FixedUpdate to properly jump!
+    //and then I check for this value (pressjump) in my FixedUpdate to properly jump!
     //the movement using inputVector also happens in FixedUpdate but is calculated in the Update
-    //This is only needed when we manipulate rigidbodies and I I had made a bespoke controller without any physics I wouldn't need to do that
+    //This is only needed when we manipulate rigidbodies and if I had made a bespoke controller without any physics I wouldn't need to do that
     private void FixedUpdate()
     {
         //jump
@@ -76,7 +76,7 @@ public class PlatformerController2 : MonoBehaviour
         //I add a 0.1f value to the max distance of the raycast just so the check goes a bit beyond the size of the collider
 
         //in this case, it's to check to see if the player is on the ground, if it is, we can jump
-        if(Physics.Raycast(transform.position, Vector3.down, (collider.size.y * .5f) + .1f))
+        if(Physics.Raycast(transform.position, Vector3.down, (playerCollider.size.y * .5f) + .1f))
         {
             isGrounded = true;
             isJumping = false;

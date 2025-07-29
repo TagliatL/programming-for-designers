@@ -34,7 +34,7 @@ public class ExerciseComplete : MonoBehaviour
         {
             for (int j = 0; j < m_chapter.sections[i].checkList.Count; j++)
             {
-                if (m_chapter.sections[i].checkList[j].scene == scene.path)
+                if (AssetDatabase.GetAssetPath(m_chapter.sections[i].checkList[j].scene) == scene.path)
                 {
                     yield return new WaitForSeconds(1f);
                     SelectReadme();

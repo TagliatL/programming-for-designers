@@ -147,12 +147,12 @@ public class ReadmeEditor : Editor
             GUILayout.FlexibleSpace();
 
 
-            if (!string.IsNullOrEmpty(section.scene))
+            if (section.scene != null)
             {
-                string sceneName = SceneManager.GetSceneByPath(section.scene).name;
+                string sceneName = section.scene.name;
                 if (GUILayout.Button("Open Scene", ButtonStyle, GUILayout.Width(iconWidth)))
                 {
-                    EditorSceneManager.OpenScene(section.scene);
+                    EditorSceneManager.OpenScene(AssetDatabase.GetAssetPath(section.scene));
                 }
 
             }
@@ -170,14 +170,14 @@ public class ReadmeEditor : Editor
             {
                 if (section.checkList[i] != null)
                 {
-                    string sceneNameExercise = SceneManager.GetSceneByPath(section.checkList[i].scene).name;
+                    string sceneNameExercise = section.checkList[i].scene.name;
                     GUILayout.BeginHorizontal();
 
                     GUILayout.FlexibleSpace();
                     GUI.backgroundColor = Color.white;
                     if (GUILayout.Button("Exercise " + "0"+(i+1), ButtonStyle, GUILayout.Width(exerciseButtonWidth)))
                     {
-                        EditorSceneManager.OpenScene(section.checkList[i].scene);
+                        EditorSceneManager.OpenScene(AssetDatabase.GetAssetPath(section.checkList[i].scene));
                     }
                     string checkText = section.checkList[i].check ? "Done!" : "To do";
                     if (section.checkList[i].check)

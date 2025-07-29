@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 [CreateAssetMenu(fileName = "Readme_Chapter", menuName = "ScriptableObjects/Readme_Chapter", order = 5)]
 public class ReadmeChapter : ScriptableObject
@@ -19,7 +20,7 @@ public class ReadmeChapter : ScriptableObject
         public string heading, text;
         public List<UsefulLink> links;
         public Texture2D icon;
-        public string scene;
+        public Object scene;
         public List<ExerciceCheckList> checkList;
     }
 
@@ -28,7 +29,7 @@ public class ReadmeChapter : ScriptableObject
     {
         [ReadOnly]
         public bool check;
-        public string scene;
+        public Object scene;
     }
 
     [Serializable]

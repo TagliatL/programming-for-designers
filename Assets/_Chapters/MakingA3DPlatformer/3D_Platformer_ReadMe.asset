@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: 3D_Platformer_ReadMe
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: b369ab1b093427e43b1b4a6a9f7ddaa0, type: 3}
+  title: Making a 3D platformer controller
+  sections:
+  - heading: 'Level 1: The basics'
+    text: A very basic and unsexy 3D platformer controller using a rough implementation
+      of Unity physics and input detections. A good place to start though!
+    links:
+    - linkText: Unity's documentation on AddForce
+      url: https://docs.unity3d.com/ScriptReference/Rigidbody.AddForce.html
+    - linkText: Unity's documentation on MovePosition
+      url: https://docs.unity3d.com/ScriptReference/Rigidbody.MovePosition.html
+    icon: {fileID: 2800000, guid: e1ea804d3de36924cb6f34e556a97750, type: 3}
+    scene: {fileID: 102900000, guid: 1e9a0379f1296d14598eee8a3c77f2e6, type: 3}
+    checkList: []
+  - heading: 'Level 2: Ground detection and snappier jump'
+    text: Applying more forces (still in a very simple way) and using a raycast to
+      detect if the player is grounded or not allow us to make a more polished controller.
+      I rotate the body of the player in the direction it's moving to make it look
+      more polished as well.
+    links:
+    - linkText: Unity's documentation on raycasts
+      url: https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
+    - linkText: Game dev beginner's video on it
+      url: https://www.youtube.com/watch?v=B34iq4O5ZYI
+    - linkText: Unity's documentation on LookAt
+      url: https://docs.unity3d.com/ScriptReference/Transform.LookAt.html
+    icon: {fileID: 2800000, guid: e94d5dbc8e7d6a5498cb1740c850afd5, type: 3}
+    scene: {fileID: 102900000, guid: 34e8b25ba029f4f479356f495971587e, type: 3}
+    checkList: []
+  - heading: 'Level 3: Animations and polishing the controls'
+    text: Using a 3D model and animations with the animator component we're taking
+      this controller to the next level! Also trading the raycast for a more reliable
+      sphereCast. Check the scene readme to read on all the features this controller
+      implements.
+    links:
+    - linkText: Unity's documentation on the Animator
+      url: https://docs.unity3d.com/6000.1/Documentation/Manual/class-AnimatorController.html
+    icon: {fileID: 2800000, guid: 63a2a3b29ffb1754d96e29c6b2913859, type: 3}
+    scene: {fileID: 102900000, guid: eb6e63f71316b5343a7142aa0545add2, type: 3}
+    checkList: []
+  loadedLayout: 0

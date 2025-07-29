@@ -27,7 +27,7 @@ MonoBehaviour:
     - linkText: On the difference between a Script and a Component
       url: https://docs.unity3d.com/520/Documentation/Manual/TheComponent-ScriptRelationship.html
     icon: {fileID: 2800000, guid: ae1c96d73d1679c43a836f06adc3b437, type: 3}
-    scene: Assets/_Chapter 01/Example_of_a_scene.unity
+    scene: {fileID: 102900000, guid: e15120d5197a89148b86bbb545afb63a, type: 3}
     checkList: []
   - heading: Exercises
     text: To understand Unity's approach to scenes and assets I've prepared a series
@@ -41,16 +41,16 @@ MonoBehaviour:
     - linkText: More info on how to use the Scene View
       url: https://docs.unity3d.com/520/Documentation/Manual/UsingTheSceneView.html
     icon: {fileID: 0}
-    scene: 
+    scene: {fileID: 0}
     checkList:
     - check: 0
-      scene: Assets/_Chapter 01/Exercises/Exercise_01_01.unity
+      scene: {fileID: 102900000, guid: 2e71ad08cf256a642b128e5674809998, type: 3}
     - check: 0
-      scene: Assets/_Chapter 01/Exercises/Exercise_01_02.unity
+      scene: {fileID: 102900000, guid: ff3c0484d0fe5b74e9eabf1032374eae, type: 3}
     - check: 0
-      scene: Assets/_Chapter 01/Exercises/Exercise_01_03.unity
+      scene: {fileID: 102900000, guid: 7c0040e4b7169d64784e4783a4511564, type: 3}
     - check: 0
-      scene: Assets/_Chapter 01/Exercises/Exercise_01_04.unity
+      scene: {fileID: 102900000, guid: b912efe19d6422845a421fe4b5400d6b, type: 3}
     - check: 0
-      scene: Assets/_Chapter 01/Exercises/Exercise_01_05.unity
+      scene: {fileID: 102900000, guid: 11e28bb7fd0bf2d4882128503175e701, type: 3}
   loadedLayout: 0
