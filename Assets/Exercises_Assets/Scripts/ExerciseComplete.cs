@@ -11,9 +11,6 @@ public class ExerciseComplete : MonoBehaviour
 
     [SerializeField] private ReadmeChapter m_chapter;
 
-    [SerializeField]
-    Vector3[] positions = new Vector3[5];
-
     private Scene scene;
 
     private void Start()

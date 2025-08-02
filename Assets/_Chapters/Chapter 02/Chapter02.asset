@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Chapter02
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: b332f069270551048ae90f30573ba746, type: 3}
+  title: Chapter 02<br>Introduction to programming
+  sections:
+  - heading: Exercises
+    text: Let's apply a few of the programming fundamentals to some practical cases
+    links:
+    - linkText: Understand what a transform is and how to access its position
+      url: https://docs.unity3d.com/ScriptReference/Transform-position.html
+    - linkText: Unity's documentation on Vectors
+      url: https://docs.unity3d.com/ScriptReference/Vector3.html
+    - linkText: OnTriggerEnter, method called when entering a trigger collider
+      url: https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html
+    icon: {fileID: 0}
+    scene: {fileID: 0}
+    checkList:
+    - check: 0
+      scene: {fileID: 102900000, guid: 4c2ae5e1f72ba454f9fb6635777a7a20, type: 3}
+    - check: 0
+      scene: {fileID: 102900000, guid: d83dae4fa2bc92f4cbeff49f9b1fc3e3, type: 3}
+  loadedLayout: 0
