@@ -4,7 +4,7 @@ public class PlatformerController3 : MonoBehaviour
 {
     [SerializeField] private float jumpStrength;
     [SerializeField] private float movementSpeed;
-    [SerializeField] private float extraGravity = 5f;
+    [SerializeField] private float extraGravity;
 
     Rigidbody rb;
     BoxCollider playerCollider;
@@ -84,6 +84,19 @@ public class PlatformerController3 : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        //when entering a trigger, is it a collectible?
+        Collectible_Abstract collectible = other.GetComponent<Collectible_Abstract>();
+        if (collectible != null)
+        {
+            //if it is indeed a collectible, we collect it!
+            //by using an abstract class for all collectibles, we can keep this part of the code VERY generic and then have special cases in the collectibles themselves
+            collectible.Collect();
+        }
+
+    }
+
     private void FixedUpdate()
     {
         //jump
@@ -103,11 +116,6 @@ public class PlatformerController3 : MonoBehaviour
         //this constant extra force going down is a cheap trick I use to make the jump more snappy
         //because it's a constant gravity, we need to make our jump stronger to "fight" it going up
         rb.AddForce(Vector3.down * extraGravity, ForceMode.Acceleration);
-
-        //we use a raycast and use it to check for the floor under us
-        //it starts in the center of the object (transform.position), goes down (Vector3.down) and go as far as the size of the player collider / 2
-        //I add a 0.1f value to the max distance of the raycast just so the check goes a bit beyond the size of the collider
-
     }
 
     void VisualDebug()
