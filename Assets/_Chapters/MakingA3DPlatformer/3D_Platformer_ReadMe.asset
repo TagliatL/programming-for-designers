@@ -41,14 +41,15 @@ MonoBehaviour:
     icon: {fileID: 2800000, guid: e94d5dbc8e7d6a5498cb1740c850afd5, type: 3}
     scene: {fileID: 102900000, guid: 34e8b25ba029f4f479356f495971587e, type: 3}
     checkList: []
-  - heading: 'Level 3: Animations and polishing the controls'
+  - heading: 'Level 3: Animations, polishing the controls and coins to pick up'
     text: Using a 3D model and animations with the animator component we're taking
-      this controller to the next level! Also trading the raycast for a more reliable
-      sphereCast. Check the scene readme to read on all the features this controller
-      implements.
+      this controller to the next level! I also added a few coins to pick up. Check
+      the scene readme to read on all the features this controller implements.
     links:
     - linkText: Unity's documentation on the Animator
       url: https://docs.unity3d.com/6000.1/Documentation/Manual/class-AnimatorController.html
+    - linkText: 'Unity''s documentation on the OnTriggerEnter method '
+      url: https://docs.unity3d.com/ScriptReference/Collider.OnTriggerEnter.html
     icon: {fileID: 2800000, guid: 63a2a3b29ffb1754d96e29c6b2913859, type: 3}
     scene: {fileID: 102900000, guid: eb6e63f71316b5343a7142aa0545add2, type: 3}
     checkList: []
