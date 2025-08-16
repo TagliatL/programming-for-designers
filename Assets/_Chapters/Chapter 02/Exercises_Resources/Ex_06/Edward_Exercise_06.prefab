@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8131268091013810170}
   - component: {fileID: 4604816191813845178}
   m_Layer: 0
-  m_Name: Edward_StayStill
+  m_Name: Edward_Exercise_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

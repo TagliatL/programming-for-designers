@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6130090262645430501
+--- !u!1 &6401920404425410936
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,53 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8665064982783380697}
-  - component: {fileID: 5253689211093144152}
-  - component: {fileID: 7353852909451925666}
-  - component: {fileID: 6632907025297083982}
+  - component: {fileID: 6875883325852581234}
+  - component: {fileID: 7763535318986136571}
+  - component: {fileID: 7410264234547605322}
+  - component: {fileID: 6392541907655759824}
   m_Layer: 0
-  m_Name: Edward_AlwaysWalkForward
+  m_Name: Edward_Exercise_08
   m_TagString: Edward
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8665064982783380697
+--- !u!4 &6875883325852581234
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6130090262645430501}
+  m_GameObject: {fileID: 6401920404425410936}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3, y: 0.158, z: 1.529}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6822146321888836280}
+  - {fileID: 3682067387158845558}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &5253689211093144152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6130090262645430501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9da51b32dda4ace4a80937dd51a96af8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
---- !u!54 &7353852909451925666
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &7763535318986136571
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6130090262645430501}
+  m_GameObject: {fileID: 6401920404425410936}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -75,13 +62,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6632907025297083982
+--- !u!65 &7410264234547605322
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6130090262645430501}
+  m_GameObject: {fileID: 6401920404425410936}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -96,13 +83,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: -0.42, z: 0.32}
---- !u!1001 &2891624795268664151
+--- !u!114 &6392541907655759824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6401920404425410936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126b4efb0e5efeb49b4c16c8270a76c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!1001 &5014028413409683865
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 8665064982783380697}
+    m_TransformParent: {fileID: 6875883325852581234}
     m_Modifications:
     - target: {fileID: 3227971968940326410, guid: 2c753645ef8f72241a3aee80b844d1b7, type: 3}
       propertyPath: m_Name
@@ -177,8 +177,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c753645ef8f72241a3aee80b844d1b7, type: 3}
---- !u!4 &6822146321888836280 stripped
+--- !u!4 &3682067387158845558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8542269119848296943, guid: 2c753645ef8f72241a3aee80b844d1b7, type: 3}
-  m_PrefabInstance: {fileID: 2891624795268664151}
+  m_PrefabInstance: {fileID: 5014028413409683865}
   m_PrefabAsset: {fileID: 0}

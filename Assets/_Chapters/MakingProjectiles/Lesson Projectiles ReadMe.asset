@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Lesson Projectiles ReadMe
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 4ab77a8c95c6fbb49a1687036b6898f6, type: 3}
+  title: 'Lesson: learning how to make projectiles in Unity'
+  sections:
+  - heading: Hitscan vs traveling projectiles
+    text: In fps games those are usually the two ways to create projectiles for guns.
+      Hitscans are instant and if something was in your lens when you shoot then
+      it is hit. Traveling projectiles take time, will sometimes be physic based
+      and will detect collision on their own. They necessitate to be instantiated
+      and destroyed.<br>The two methods have their pros and cons, we'll look at both
+      in this sample project.
+    links: []
+    icon: {fileID: 0}
+    scene: {fileID: 0}
+    checkList: []
+  - heading: Traveling projectiles
+    text: We instantiate bullets with their own speed and behavior that explode on
+      impact.
+    links:
+    - linkText: Unity's documentation on raycasts
+      url: https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
+    - linkText: Unity's documentation on LookAt
+      url: https://docs.unity3d.com/ScriptReference/Transform.LookAt.html
+    icon: {fileID: 2800000, guid: 469a03bdef215fa4789063d2c4365eab, type: 3}
+    scene: {fileID: 102900000, guid: 9a173bb2962229447a3d701146193b3f, type: 3}
+    checkList: []
+  - heading: Hitscan
+    text: 
+    links:
+    - linkText: Unity's documentation on raycasts
+      url: https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
+    - linkText: Unity's documentation on LookAt
+      url: https://docs.unity3d.com/ScriptReference/Transform.LookAt.html
+    icon: {fileID: 2800000, guid: d7252afe27125a44c95c027f235ca1d3, type: 3}
+    scene: {fileID: 102900000, guid: 87b30122f145c4f47bb34ece9cfd5f18, type: 3}
+    checkList: []
+  loadedLayout: 0

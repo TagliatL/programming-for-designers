@@ -10,11 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
-  m_Name: 3D_Platformer_ReadMe
+  m_Name: Lesson 3D platformer_ReadMe
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: b369ab1b093427e43b1b4a6a9f7ddaa0, type: 3}
-  title: Making a 3D platformer controller
+  title: 'Lesson: Making a 3D platformer controller'
   sections:
+  - heading: 
+    text: This lesson contains:<br>-Input detection<br>-3D Physics<br>-Raycast<br>-Animator<br>-Inheritance
+    links: []
+    icon: {fileID: 0}
+    scene: {fileID: 0}
+    checkList: []
   - heading: 'Level 1: The basics'
     text: A very basic and unsexy 3D platformer controller using a rough implementation
       of Unity physics and input detections. A good place to start though!
