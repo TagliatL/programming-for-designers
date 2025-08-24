@@ -4,7 +4,7 @@ public class TravelingProjectile : MonoBehaviour
 {
     public GameObject explosionFXPrefab;
     public float speed = 10f;
-    public Vector3 initialDirection;
+    [HideInInspector]public Vector3 initialDirection;
 
     private Vector3 m_lastPos;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,9 +25,11 @@ public class TravelingProjectile : MonoBehaviour
         //this time, it's to account for bullets that are too fast they could pass through wall inbetween two frames
         //we use a raycast from our current position to the last frame's position and see if there is any wall that intersects
         float rayDist = Vector3.Distance(transform.position, m_lastPos);
-        if (Physics.Raycast(transform.position, -transform.forward, rayDist))
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, -transform.forward,out hit, rayDist))
         {
             //do we hit something? then we EXPLODE
+            transform.position = hit.point;
             Explode();
         }
 
