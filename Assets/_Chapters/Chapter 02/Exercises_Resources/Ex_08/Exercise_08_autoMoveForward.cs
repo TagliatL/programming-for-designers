@@ -16,6 +16,13 @@ public class Exercises_08_autoMoveForward : MonoBehaviour
         //if you're wondering why the example is using a raycast declaration in a if statement it's because it's a handy way to say "if the raycast hits something then do this"
         //declaring a raycast with all the arguments can be intimidating but it's possible to make a raycast with just: a position, a direction and a max 
 
+        RaycastHit hit;
 
+        if (Physics.Raycast(transform.position, Vector3.forward, out hit))
+            if (hit.distance < 0.6f)
+            {
+                transform.rotation = Quaternion.Euler(0f, -90f, 0f);
+            }
+            // print("Found an object - distance: " + hit.distance);
     }
 }

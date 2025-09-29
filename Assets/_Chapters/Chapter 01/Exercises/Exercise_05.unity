@@ -790,7 +790,7 @@ PrefabInstance:
     - target: {fileID: 4564347609555442433, guid: bc63403ddfa36064c91b585806ad935f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 13400000, guid: 0cff1e89ff2bd944b9644c0abe7f5088, type: 2}
     - target: {fileID: 7215602313663714410, guid: bc63403ddfa36064c91b585806ad935f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -940,6 +940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4564347609555442433, guid: bc63403ddfa36064c91b585806ad935f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7215602313663714410, guid: bc63403ddfa36064c91b585806ad935f, type: 3}
       propertyPath: m_LocalScale.z
       value: 5
@@ -1005,7 +1009,7 @@ PrefabInstance:
     - target: {fileID: 285022357286211521, guid: 8285af1cedeaa154981a527c9a700343, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 13400000, guid: 93aee50484a44c049abcfad06d29519a, type: 2}
     - target: {fileID: 3293268006331417457, guid: 8285af1cedeaa154981a527c9a700343, type: 3}
       propertyPath: m_Name
       value: Corner

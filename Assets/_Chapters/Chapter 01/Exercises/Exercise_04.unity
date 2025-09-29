@@ -440,7 +440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4038536075568598627, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7
+      value: 6.53
       objectReference: {fileID: 0}
     - target: {fileID: 4038536075568598627, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
       propertyPath: m_LocalRotation.w
@@ -482,8 +482,58 @@ PrefabInstance:
     - {fileID: 2569930154729900144, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8588101479546319812, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 754535733}
+    - targetCorrespondingSourceObject: {fileID: 8588101479546319812, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 754535732}
   m_SourcePrefab: {fileID: 100100000, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
+--- !u!1 &754535731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8588101479546319812, guid: 7551b1bccfa4c6042a957d7ed0875833, type: 3}
+  m_PrefabInstance: {fileID: 754535730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!75 &754535732
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754535731}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: -5}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!54 &754535733
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754535731}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1454434916
 PrefabInstance:
   m_ObjectHideFlags: 0
