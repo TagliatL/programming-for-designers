@@ -12,10 +12,11 @@ public class PlayerMovement : MonoBehaviour
     public float lookXLimit = 45f;
     
     [Header("Camera Angles")] 
-    [SerializeField] private GameObject ThirdPerson;
+    [Tooltip("Different POVs you can get")]
+    [SerializeField] private GameObject ThirdPersonShort;
     [SerializeField] private GameObject FirstPerson;
     [SerializeField] private GameObject BirdsEyeView;
-
+    [SerializeField] private GameObject ThirdPersonLong;
     
     [Header("SerializeFields")]
     [Description("Player Perspective")]
@@ -57,19 +58,19 @@ public class PlayerMovement : MonoBehaviour
 
     private enum PlayerPerspective
     {
-        ThirdPerspective01,
+        ThirdPerspectiveShort,
         FirstPerspective,
         BirdsEyeView,
-        ThirdPerspective02,
+        ThirdPerspectiveLong,
     }
 
     private void CameraSwitch()
     {
-        if (PerspectiveEnum.Equals(PlayerPerspective.ThirdPerspective01))
+        if (PerspectiveEnum.Equals(PlayerPerspective.ThirdPerspectiveShort))
         {
             PerspectiveEnum = PlayerPerspective.FirstPerspective;
             FirstPerson.SetActive(true);
-            ThirdPerson.SetActive(false);
+            ThirdPersonShort.SetActive(false);
         }
         else if (PerspectiveEnum.Equals(PlayerPerspective.FirstPerspective))
         {
@@ -79,20 +80,15 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (PerspectiveEnum.Equals(PlayerPerspective.BirdsEyeView))
         {
-            PerspectiveEnum = PlayerPerspective.ThirdPerspective02;
-            ThirdPerson.SetActive(true);
-            var cameraDist = ThirdPerson.GetComponent<CinemachineOrbitalFollow>();
-            cameraDist.Radius = 8;
+            PerspectiveEnum = PlayerPerspective.ThirdPerspectiveLong;
+            ThirdPersonLong.SetActive(true);
             BirdsEyeView.SetActive(false);
         }
-        else if (PerspectiveEnum.Equals(PlayerPerspective.ThirdPerspective02))
+        else if (PerspectiveEnum.Equals(PlayerPerspective.ThirdPerspectiveLong))
         {
-            PerspectiveEnum = PlayerPerspective.ThirdPerspective01;
-            var cameraDist = ThirdPerson.GetComponent<CinemachineOrbitalFollow>();
-            while (cameraDist.Radius > 4)
-            {
-                cameraDist.Radius = cameraDist.Radius - 0.1f * Time.deltaTime;
-            }
+            PerspectiveEnum = PlayerPerspective.ThirdPerspectiveShort;
+            ThirdPersonShort.SetActive(true);
+            ThirdPersonLong.SetActive(false);
         }
     }
 }
