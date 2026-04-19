@@ -787,12 +787,16 @@ PrefabInstance:
       value: TRIGGER_BOX
       objectReference: {fileID: 0}
     - target: {fileID: 7498005567510638525, guid: 0323c1ed27ae2fd4492bc1235661fa4e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498005567510638525, guid: 0323c1ed27ae2fd4492bc1235661fa4e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7498005567510638525, guid: 0323c1ed27ae2fd4492bc1235661fa4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 7498005567510638525, guid: 0323c1ed27ae2fd4492bc1235661fa4e, type: 3}
       propertyPath: m_LocalPosition.y
